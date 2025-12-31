@@ -188,7 +188,7 @@ footer.main-footer .footer-text a:hover {
 /*网格背景*/
 .io-grey-mode .page-container .grid-bg {
     /* background-image: linear-gradient(rgba(50, 0, 0, 0.05) 1px, transparent 0), linear-gradient(90deg, rgba(50, 0, 0, 0.05) 1px, transparent 0); */
-    background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1920&q=80');
+    background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -197,10 +197,17 @@ footer.main-footer .footer-text a:hover {
 
 /* 搜索栏背景图片 */
 .header-big.css-color {
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80');
+    background-image: url('https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     animation: none;
     -webkit-animation: none;
+}
+
+/* 导航分类标题颜色 */
+.content-site h4.text-gray,
+.content-site h4.text-gray i {
+    color: #131313 !important;
+    /* 深绿色 */
 }
