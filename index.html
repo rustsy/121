@@ -6100,15 +6100,10 @@
     <script>
         $(document).ready(function () {
             setTimeout(function () {
-                if ($('a.smooth[href="' + window.location.hash + '"]')[0]) {
-                    $('a.smooth[href="' + window.location.hash + '"]').click();
-                } else if (window.location.hash != '') {
-                    $("html, body").animate({
-                        scrollTop: $(window.location.hash).offset().top - 90
-                    }, {
-                        duration: 500,
-                        easing: "swing"
-                    });
+                // 强制刷新后访问首页（顶部）
+                if (window.location.hash) {
+                    history.replaceState(null, null, window.location.pathname + window.location.search);
+                    $('html, body').animate({ scrollTop: 0 }, 0);
                 }
             }, 300);
             $(document).on('click', 'a.smooth', function (ev) {
